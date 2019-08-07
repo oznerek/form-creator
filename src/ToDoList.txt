@@ -1,0 +1,23 @@
+------ ToDo ----------
+
+1. Przekazać zmiennia z typem pola odpowiedzi do SubQuestion aby wyrenderowac 
+    odpowiedni "Condition"
+    Jak przekazać wartość stanu pola "type" z elemntu na ktorym przycisnieto
+    "Add Sub-Input", aktualnie przekazuje sobie dane już z nowymi wartościami
+    i ze stanem obecnie utworzonego pola...
+_DONE_
+
+
+2. Uporzadkować nazewnictwo pytań "Question / SubQuestion", aby nowe zapytanie
+    nie pojawialo sie na koncu, a bezpośrednio pod blokiem w ktorym przycisnieto 
+    "Add Sub-Input". (Sortowanie danych w state???)
+_DONE_
+
+3. Program pada po usunieciu pytania nadrzednego.
+    UPDATE - po wcisnieciu usun na dowolnym elemencie kasuje ten element -ok,
+            ALE kasuje rowniez wszystkie wprowadzone dane w innych polach-
+            ( _DONE_  -> na kazdej stronie dodac w exprot redux form;   
+                {destroyOnUnmount: false,
+                forceUnregisterOnUnmount: true,} )
+                
+    Wprowadzic zmiane- gdy usuwam rodzica usuwam wszystkie jego dzieci
