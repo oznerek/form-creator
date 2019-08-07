@@ -1,0 +1,42 @@
+body {
+    background-color: lightgray;
+    font-family: myFont;
+}
+
+.edit {
+  opacity: 0;
+  cursor: pointer;
+}
+.select-form:hover{
+  filter: brightness(80%);
+  border: 2px dashed rgba(0, 0, 0, 0.5);
+
+}
+.select-form:hover .edit {
+  opacity: 0.9;
+}
+
+
+@media screen and (max-width: 600px) { 
+  .header {display: none}
+}
+
+@media screen and (max-width: 990px) { 
+  .header {display: none}
+
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url(/fonts/Comfortaa-Regular.ttf);
+  }
+  @font-face {
+    font-family: "myFont";
+    src: url(/fonts/Comfortaa-Bold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "myFont";
+    src: url(/fonts/Comfortaa-Light.ttf);
+    font-weight: lighter;
+  }
