@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="container py-2">
       <Header />
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Route path="/" exact component={Intro} />
           {/* <Route path="/newform" exact component={NewForm} /> */}
