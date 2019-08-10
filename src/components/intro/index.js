@@ -5,7 +5,7 @@ class Intro extends React.Component {
   render() {
     const createNewForm = () => {
       localStorage.clear();
-      window.location.href = `/newField`;
+      window.location.href = `newField`;
     };
   return (
     <div className="container">
