@@ -10,9 +10,9 @@ const App = () => {
       <Header />
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
-          <Route exact path="/" exact component={Intro} />
+          <Route path={process.env.PUBLIC_URL + '/'} exact component={Intro} />
           {/* <Route path="/newform" exact component={NewForm} /> */}
-          <Route exact path="/newField" exact component={NewForm} />
+          <Route path={process.env.PUBLIC_URL + '/newField'} exact component={NewForm} />
         </div>
       </BrowserRouter>
       <footer>
