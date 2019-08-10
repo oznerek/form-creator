@@ -5,14 +5,14 @@ class Intro extends React.Component {
   render() {
     const createNewForm = () => {
       localStorage.clear();
-      window.location.href = `newField`;
+      window.location.href = `${process.env.PUBLIC_URL}/newField`;
     };
   return (
     <div className="container">
     <div className='row'>
       <div className="col-2" />
       <div className="py-3 col-8">
-        <h3 className="text-center">Start make a Form</h3>
+        <h3 className="text-center">Start make a Forms</h3>
         <button
           className="btn btn-success btn-lg btn-block"
           onClick={createNewForm}
